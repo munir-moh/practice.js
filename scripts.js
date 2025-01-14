@@ -94,3 +94,36 @@ console.log(squaredNumbers);
 let numbers1 = [1, 2, 3, 4, 5];
 let squaredNumbers1 = numbers1.map((number) => (number * number));
 console.log(squaredNumbers1);
+
+//DESTRUCTURING: extracting values from arrays and objects and assigning them in a convenient way
+//[]-for extracting values from arrays,{}-for extracting values from objects
+//EXAMPLE 1. To swap the value of two variables
+let a = 7;
+let b = 2;
+[a,b] = [b,a];
+console.log(a);
+console.log(b);
+
+//EXAMPLE 2. To swap elements in an array
+const colors = ["Yellow", "Green", "Blue", "Red"];
+[colors[0],colors[3]] = [colors[3], colors[0]];
+console.log(colors);
+
+//EXAMPLE 3. ASSIGN ARRAY ELEMENTS TO VARIABLE
+const color1 = ["Violet", "Purple", "Brown"];
+const[firstColor, secondColor, thirdColor] = color1;
+console.log(firstColor);
+console.log(secondColor);
+
+//EXAMPLE 4. Extract values from elements
+const person1 = {
+    firstName: "Munir",
+    lastName: "Mohammed",
+    age: 19
+}
+const {firstName, lastName, age} = person1
+console.log(firstName);
+console.log(lastName);
+console.log(age);
+
+//EXAMPLE 5. Destructuring in function parameters

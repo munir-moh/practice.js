@@ -70,9 +70,9 @@ console.log(isValidEmail('munirmuhd120@gmail.com'));
 //FORMULA = (parameters) => some code
 setTimeout(function(){
     console.log('Hello');
-}, 3000);
+}, 1000);
 
-setTimeout(() => {console.log('Hello')}, 3000);
+setTimeout(() => {console.log('Hello')}, 1000);
 
 const hello = (name, age) => {console.log('Hello ' + name);
                               console.log('you are ' + age + 'years old');}
@@ -119,11 +119,35 @@ console.log(secondColor);
 const person1 = {
     firstName: "Munir",
     lastName: "Mohammed",
-    age: 19
+    age: 19,
+    job: "Chef",
 }
-const {firstName, lastName, age} = person1
+const person2 = {
+    firstName: "Munir",
+    lastName: "Mohammed",
+    age: 19,
+}
+const {firstName, lastName, age, job="Unemployed"} = person2
 console.log(firstName);
 console.log(lastName);
 console.log(age);
+console.log(job);
 
 //EXAMPLE 5. Destructuring in function parameters
+function displayPerson({firstName, lastName, age, job="Footballer"}){
+    console.log("name: " , firstName, lastName),
+    console.log("age: ", age),
+    console.log("job: ", job)
+}
+const person3 = {
+    firstName: "Munir",
+    lastName: "Mohammed",
+    age: 19,
+    job: "Chef",
+}
+const person4 = {
+    firstName: "Munir",
+    lastName: "Mohammed",
+    age: 19,
+}
+displayPerson(person3);

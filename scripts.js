@@ -166,3 +166,16 @@ displayPerson(person3);
 let age1 = 18
 let canDrive = age1 >=18 ? 'Yes' : 'No';
 console.log(canDrive);
+
+
+//ES Modules and Import / Export Syntax
+//ES Modules (ECMAScript Modules) are a standardized way to organize and share code in JavaScript. They allow you to import and export functions, objects, or values from one module to another, promoting modularity and reusability in your code.
+//Exporting Modules: You can export variables, functions, or classes using the export keyword.
+//Named Exports: Named exports allow you to export multiple items from a module. Each item needs to be imported with the exact name
+//Default Exports: Default exports allow you to export a single value or item from a module. They are useful when a module exports only one thing.
+//Importing Modules: You can import variables, functions, or classes from a module using the import keyword.
+//Named Imports: Named imports allow you to import specific items from a module.
+//Default Imports: Default imports allow you to import the default export from a module.
+//Combined Imports: You can combine named and default imports.
+//Renaming imports and exports: You can rename imports and exports using the as keyword.
+//Re-Exporting: You can re-export items from another module.

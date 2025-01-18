@@ -151,3 +151,8 @@ const person4 = {
     age: 19,
 }
 displayPerson(person3);
+
+//Template literals in JavaScript are an enhanced way to create strings, offering more powerful features than regular string literals. They are enclosed by backticks (``) and provide:
+//1.Multi-line Strings: No need for escape characters, making code cleaner.
+//2.String Interpolation: Embed expressions using ${expression} syntax for dynamic content.
+//3.Tagged Templates: Custom functions can process template literals for advanced string manipulation.
